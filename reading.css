@@ -1,0 +1,314 @@
+*{
+    /* 全局选择器 */
+    margin:0;
+    padding:0;
+}
+
+ul,li{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+body{
+    font-family:"微软雅黑",arial;
+    font-size:14px;
+    color:#000;
+    background-color:antiquewhite;
+}
+
+header{
+    width:950px;
+    margin:auto;
+}
+
+header img{
+    width:950px;
+    height:280px;
+    display:block;
+}
+
+nav{
+    width:950px;
+    height:40px;
+    margin:auto;
+    background-color: #cccc99;
+    clear:both;
+}
+
+nav ul{
+    float:left;
+}
+
+nav li{
+    float:left;
+    margin-left:20px;
+}
+
+nav li a{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    padding:0 18px;
+    color:#255542;
+    font-weight:bold;
+}
+
+nav .search{
+    float:left;
+}
+
+nav .search p{
+    float:left;
+    margin-left:215px;
+    line-height:40px;
+    color:#016941;
+    font-weight:bold;
+}
+
+nav .search .input1{
+    width:152px;
+    height:18px;
+    border:1px solid #016941;
+    margin-top:10px;
+    margin-left:5px;
+}
+
+nav .search .input2{
+    width:36px;
+    height:20px;
+    border:none;
+    background:#016941;
+    color:#fff;
+    margin-top:10px;
+}
+img{/*图片设置*/
+    border-radius: 15px;/*边框弧度*/
+}
+ 
+.dh ul {
+    /*导航栏*/
+    margin-bottom: 30px;
+    width: 1539px;
+    padding: 0px;
+    height: 30px;
+}
+ 
+.dh ul li {/*导航栏列表*/
+    height: 30px;
+    width: 16.45%;
+    list-style: none;/*列表样式*/
+    float: left;/*左浮动*/
+    display: inline;/*行内显示*/
+    font: 0.9em;/*字体大小*/
+}
+.dh{/*导航高度*/
+    height: 30px;
+}
+.dh ul li a {/*导航链接设置*/
+    text-align: center;/*文字居中*/
+    color: white;
+    width: 100%;
+    font-size: larger;
+    font-family: 楷体;
+    text-decoration: none;/*下划线无*/
+    display: block;/*块显示*/
+    background-color: rgb(87, 156, 241);
+    line-height: 40px;
+    border-bottom: 1px solid rgb(168, 164, 172);/*底部边框*/
+}
+ 
+.dh ul li a:hover {
+    /*鼠标划导航栏时过时*/
+    color: rgb(0, 0, 0);
+    background-color: rgb(37, 84, 155);
+    border-bottom: 3px solid rgb(16, 4, 28);
+}
+ 
+#fi1 {
+    /*尾部图片*/
+    width: 100px;
+    height: 70px;
+    float: right;/*右浮动*/
+    padding: 0px;
+}
+span{
+    /*>>>行内设置*/
+    float: right;
+}
+span p{/*>>>行内段落设置*/
+    font-size: small;
+}
+span a{/*链接设置*/
+    color: rgb(0, 0, 0);
+}
+span a:hover{/*鼠标划过时链接变化*/
+    color: rgb(77, 248, 10);
+}
+
+.zhuti h1{
+    color: rgb(81, 105, 76);
+    font-size: 25px;
+    padding-top:20px;
+    margin: 0px 10px 15px 10px;
+}
+
+.zhuti h2{/*主体标题设置*/
+    color: rgb(81, 105, 76);
+    font-family: 楷体;/*字体样式*/
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.zhuti{/*主体设置*/
+    text-align: center;/*文本居中*/
+    margin: 0px 200px 0px 200px;
+    background-color: rgb(235, 225, 225);
+}
+
+#womensa{/*《我们仨》介绍*/
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(235, 225, 225);
+    font-size: x-large;
+    padding: 10px;
+    font-family: 楷体;
+}
+#womensa p{
+    letter-spacing: 2px;/*字简介*/
+    text-indent: 2em;/*缩进*/
+    line-height: 1.5em;/*行高设置*/
+    font-size: large;
+ 
+}
+#womensa img{/*《我们仨》图片*/
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+#womensa img:hover {/*鼠标划过时*/
+    transform: scale(1.1);
+}
+ 
+#pingfan{/*《平凡的世界》介绍*/
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(235, 225, 225);
+    font-size: x-large;
+    padding: 10px;
+    font-family: 楷体;
+}
+#pingfan p{/*《平凡的世界》段落*/
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: large;
+ 
+}
+#pingfan img{/*《平凡的世界》图片*/
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+#pingfan img:hover {/*鼠标放在《平凡的世界》图片时*/
+    transform: scale(1.1);
+ 
+}
+ 
+#wenhua{/*《文化苦旅》介绍*/
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(235, 225, 225);
+    font-size: x-large;
+    padding: 10px;
+    font-family: 楷体;
+}
+#wenhua p{/*《文化苦旅》段落*/
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: large;
+ 
+}
+#wenhua img{/*《文化苦旅》图片*/
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+#wenhua img:hover {/*鼠标划过时《文化苦旅》图片*/
+    transform: scale(1.1);
+ 
+}
+ 
+#huozhe{/*《活着》介绍*/
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(235, 225, 225);
+    font-size: x-large;
+    padding: 10px;
+    font-family: 楷体;
+}
+#huozhe p{/*《活着》段落设置*/
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: large;
+ 
+}
+#huozhe img{/*《活着》图片*/
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+#huozhe img:hover {/*鼠标划过时《活着》图片*/
+    transform: scale(1.1);
+ 
+}
+ 
+#weicheng{/*《围城》介绍*/
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(235, 225, 225);
+    font-size: x-large;
+    padding: 10px;
+    font-family: 楷体;
+}
+#weicheng p{/*《围城》段落设置*/
+    letter-spacing: 2px;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: large;
+ 
+}
+#weicheng img{/*《围城》图片*/
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+#weicheng img:hover {/*鼠标划过《围城》图片*/
+    transform: scale(1.1);
+ 
+}
+
+footer{
+    width:950px;
+    height:45px;
+    background-color: #fceaa9;
+    margin:auto;
+    border-radius: 15px;
+}
+
+footer p{
+    line-height:4;
+    text-align:center;
+    margin-top:24px;
+    font-size:13px;
+}

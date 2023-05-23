@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my blog!</title>
+    <link type="text/css" rel="stylesheet" href="introduce.css">
+    <!--时钟显示-->
+    <script>
+        function showTime() {
+            var time = new Date();
+            var day = time.getDay();
+            var date = time.getDate();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var day1 = day.toString();
+            var nianyue = year + "年" + "&nbsp" + month + "月";
+            var mytime = hour + ":" + minute + ":" + second;
+            // document.getElementById("xinqi").innerHTML = day1;
+            document.getElementById("ri").innerHTML = date;
+            document.getElementById("nianyue").innerHTML = nianyue;
+            document.getElementById("tt").innerHTML = mytime;
+            setTimeout("showTime()", 1000);
+        }
+    </script>
+</head>
+<body>
+	<header>
+		<img src="images/sky.jpg">
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="introduce.html">个人简介</a></li>
+			<li><a href="travel.html">旅游相册</a></li>
+			<li><a href="reading.html">美文分享</a></li>
+		</ul>
+		<div class="search">
+			<p>站内搜索</p>
+			<input type="text" class="input1" />
+			<input type="button" value="搜索" class="input2">
+		</div>			
+	</nav>
+
+    <!--主体-->
+    <div id="zhuti">
+        <div id="right">
+            <!--主体右边-->
+            <table border="1">
+                <tr>
+                    <th>
+                        <div id="zhaopian"><!--照片-->
+                            <img src="images/ren2.jpg">
+                        </div>
+                        <div id="shijian">
+                            <!--时间-->
+                            <div id="ri"></div>
+                            <div id="nianyue"></div>
+                            <div id="tt"></div>
+                            <script>
+                                showTime();
+                            </script>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="xinxi"><!--信息-->
+                            <br>
+                            <br>
+                            <p>学校：中南财经政法大学</p>
+                            <p>学院：信息与安全工程学院</p>
+                            <p>班级：数金（双）2101</p>
+                            <P>QQ号：162xxxx1367</P>
+                            <p>联系方式：182xxxx0068</p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="left"><!--左边部分-->
+            <div id="zhan1"><!--标题-->
+                <h1>个人简介</h1>
+            </div>
+            <div id="zhan2"><!--内容-->
+                <ul>
+                    <li>姓名：李泽凯</li>
+                    <li>性别：男</li>
+                    <br>
+                        <ul id="jieshao">
+                            如果，我是说如果，我诞生于1996，中非混血初中染黄毛，高中体育生，大学是rap，后在美国校队留学两年半，回国后当义务兵两年后，在大学当教官，毕业干辅警，退休后老兵烧烤，男闺蜜边抽着锐克拿着西瓜条并且播放我的音乐:《雪distance》《雪豹dingzhen》而且见过流星划过地面，阁下该如何应对呢？
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div> 
+    
+    <div id="part">
+        <form>
+            <fieldset>
+                <!--定义域标题-->
+                <legend align="center">给我留言</legend>
+                1.姓名：<input name="xingming" type="text"><br><br>
+                2.电话：<input name="dianhua" type="text"><br><br>
+                3.性别：<br><input name="xingbie" type="radio" value="man" checked="checked" />男<br>
+                <input name="xingbie" type="radio" value="woman" />女<br><br>
+                4.标题：<br><textarea name="title" rows="3" cols="50" wrap="virtual"></textarea><br><br>
+                5.内容：<br><textarea name="neirong" rows="5" cols="50" wrap="virtual"></textarea>
+                <br>
+            </fieldset>
+            <div id="tijiao">
+                <!--提交-->
+                <input type="submit" name="submit" value="提交">
+                <input type="reset" name="reset" value="重置">
+            </div>
+        </form>
+    </div>
+   
+    <footer>
+        <p>Web开发实训作业</p>
+    </footer>	
+</body>
+</html>

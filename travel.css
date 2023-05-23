@@ -1,0 +1,174 @@
+*{
+    /* 全局选择器 */
+    margin:0;
+    padding:0;
+}
+
+ul,li{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+body{
+    font-family:"微软雅黑",arial;
+    font-size:14px;
+    color:#000;
+    background-color:antiquewhite;
+}
+
+header{
+    width:950px;
+    margin:auto;
+}
+
+header img{
+    width:950px;
+    height:280px;
+    display:block;
+    border-radius: 15px;/*边框弧度*/
+}
+
+nav{
+    width:950px;
+    height:40px;
+    margin:auto;
+    background-color: #cccc99;
+    clear:both;
+}
+
+nav ul{
+    float:left;
+}
+
+nav li{
+    float:left;
+    margin-left:20px;
+}
+
+nav li a{
+    display:inline-block;
+    height:40px;
+    line-height:40px;
+    padding:0 18px;
+    color:#255542;
+    font-weight:bold;
+}
+
+nav .search{
+    float:left;
+}
+
+nav .search p{
+    float:left;
+    margin-left:215px;
+    line-height:40px;
+    color:#016941;
+    font-weight:bold;
+}
+
+nav .search .input1{
+    width:152px;
+    height:18px;
+    border:1px solid #016941;
+    margin-top:10px;
+    margin-left:5px;
+}
+
+nav .search .input2{
+    width:36px;
+    height:20px;
+    border:none;
+    background:#016941;
+    color:#fff;
+    margin-top:10px;
+}
+
+footer{
+    width:950px;
+    height:45px;
+    background-color: #fceaa9;
+    margin:auto;
+    border-radius: 15px;
+}
+
+footer p{
+    line-height:4;
+    text-align:center;
+    margin-top:24px;
+    font-size:13px;
+}
+
+div#tableconstainer {
+    display:table;
+    border-spacing: 10px;
+	overflow: hidden;
+}
+
+div#tablerow{
+    display: table-row;
+	overflow: hidden;
+}
+
+section#qingdao, section#changsha, section#xian{
+    display: table-cell;
+	width: 30%;
+	padding: 20px 10px 20px 80px;
+    vertical-align: top;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size:        140%;
+    color:            #954b4b;
+    margin: 20px 0px 20px 0px;
+  }
+
+/* 轮播图*/
+.banner-container{
+    width:300px;
+    height:250px;
+    margin:0px auto;
+    position:relative;
+    overflow: hidden;/*用于隐藏超出展示容器的内容部分*/
+}
+
+.banner-image-container{
+    width:1500px;
+    height:250px;
+    margin:0px auto;
+    animation:text 25s infinite  linear;
+    font-size:0px;/*消除图片间隔*/
+    
+}
+.banner-image-container img{
+    width:300px;
+    height:250px;
+    float:left;
+}
+
+/* 轮播图关键帧 */
+@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%,10%{
+        transform: translateX(0px);
+    }
+    20%,30%{
+        transform: translateX(-300px);
+    }
+    40%,50%{
+        transform: translateX(-600px);
+    }
+    60%,70%{
+        transform: translateX(-900px);
+    }
+    80%,90%{
+        transform: translateX(-1200px);
+    }
+    100%,110%{
+        transform: translateX(0px);
+    }
+}
+
